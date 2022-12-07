@@ -56,6 +56,7 @@ height: 23px;
 // Criando a pagina de sign up
 document.body.querySelector('.singpg').innerHTML = `
 <form class="for-up" action="#">
+  <label value="nome">nome</label>
   <input type="text" placeholder="Insira o nome">
   <input type="text" placeholder="Insira o email">
   <input type="password" placeholder="Insira a senha">
@@ -170,6 +171,7 @@ botaoAdicionar.onclick = mostarPost
 function mostarPost(){
   if(botaoLogin.style.color == "white"){
     adicionarPost.style.display = 'flex'
+    objeto.comentario = ""
   }else{
     alert("Não está logado")
   }
